@@ -1,0 +1,25 @@
+package Semana5;
+
+import java.util.Scanner;
+
+public class ClassicacaodeIdade {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Digite sua idade: ");
+		int idade = entrada.nextInt();
+			
+		if(idade < 18) {
+			System.out.print("Menor de Idade");
+		}
+		else if(idade >= 18 && idade < 60) {
+			System.out.print("Adulto");
+		}
+		else {
+			System.out.print("Idoso");
+		}
+		
+		entrada.close();
+	}
+
+}
